@@ -1,0 +1,193 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Papyrus, fantasy;
+    line-height: 1.6;
+    background-color:rgba(235, 223, 223, 0.897);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display:grid;
+    justify-content:center;
+    
+}
+
+section{
+    padding:50px;
+}
+footer{
+    padding:20px;
+}
+
+header {
+    background-color:rgb(241, 230, 230,0.5);
+    color: rgb(20, 20, 20);
+    position: sticky;
+    top:0;
+    z-index:1000;
+    
+}
+
+
+header h1 {
+    text-align: left;
+    margin: 0px;
+}
+header nav{
+    text-align:right;
+    margin:0px;
+}
+
+nav ul {
+    list-style: none;
+    align-items: end;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-weight: bold;
+    
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+
+section {
+    text-align:auto;
+}
+
+section h2 {
+    text-align:center;
+    margin-bottom: 30px;
+    
+}
+.profile-img{
+    border:solid;
+    border-radius:10%;
+    padding:4px;
+    width:800px;
+    height:550;
+    opacity:0.8;
+    margin-left: 10px;
+    
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.overlay h3 {
+    margin-bottom: 10px;
+}
+.social-media{
+    list-style: none;
+    padding:0;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+}
+.social-media li{
+    margin:10px;
+}
+.social-media li:last-child{
+    margin-right:0;
+}
+.social-media img{
+    width:40px;
+    height:40px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color:rgb(102, 100, 100);
+    color:rgb(250, 243, 243);
+    text-align: center;
+    position:static;
+    bottom: 0;
+    width: 100%;
+}
+#about{
+    background-color: #ccc;
+    padding:60px;
+}
+#contact{
+    background-color: #b8b2b2;
+    padding:60px;
+}
+#portfolio{
+    background-color: #c7c1c1;
+    padding:60px;
+}
